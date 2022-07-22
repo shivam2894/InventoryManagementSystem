@@ -1,0 +1,768 @@
+{
+	"info": {
+		"_postman_id": "f9599fd0-9fb4-4c67-884f-3489a7156526",
+		"name": "NattuKakaApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product Controller",
+			"item": [
+				{
+					"name": "Count Per Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJOYXR0dUtha2EiLCJpYXQiOjE2NDkyNDMyOTksImV4cCI6MTY0OTMyOTY5OX0.tgXyzOzcpxumM5pF6zcb4_37hMh5vURLHDZ7frEFDqbfegm6jvJ5z_NngPWXVUsi5wd7eKsPCZAX5O6Dt8EriQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/countPerCat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"countPerCat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2)fetchProductPages",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJOYXR0dUtha2EiLCJpYXQiOjE2NDg5MjY1NzMsImV4cCI6MTY0OTAxMjk3M30.MXDyi9Fxlde-eF1B9Tm5l2av9lpO1vOyn9OD8dsptg4u4iUF353AqMCIIs63Q8RJKsmeBJuXw5grEVAh0YxF5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/page/0/filter/none",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"page",
+								"0",
+								"filter",
+								"none"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product By Name",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJOYXR0dUtha2EiLCJpYXQiOjE2NDg5MjE4OTMsImV4cCI6MTY0OTAwODI5M30.b_AlQn2LWSHJN7cXGnaAzbqMUKxaXW4-5r1KSEzkaE9cLcvpE9Zcq6Sn3D8dPlmClymWZc4uEayX8mHRBcy1pw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/name/Knife",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"name",
+								"Knife"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1)fetchProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCategories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW5naHN1bmlsIiwiaWF0IjoxNjQ5OTQwMjg2LCJleHAiOjE2NTAwMjY2ODYsInJvbGUiOlt7ImF1dGhvcml0eSI6IlJPTEVfQ09NUEFOWU9XTkVSIn1dfQ.wIU7ib-BRctd4X30X3u_h1TfmAf5aDNAYOQ5vqCDgw6FM1kFYhMm_NPq_aQoOo61w00O49BgCcIqKG7gQ37fqg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StockSummary",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW5naHN1bmlsIiwiaWF0IjoxNjQ5OTQwMjg2LCJleHAiOjE2NTAwMjY2ODYsInJvbGUiOlt7ImF1dGhvcml0eSI6IlJPTEVfQ09NUEFOWU9XTkVSIn1dfQ.wIU7ib-BRctd4X30X3u_h1TfmAf5aDNAYOQ5vqCDgw6FM1kFYhMm_NPq_aQoOo61w00O49BgCcIqKG7gQ37fqg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/stocksummary",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"stocksummary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "valuation_by_category(for Business Intelligence Page)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW5naHN1bmlsIiwiaWF0IjoxNjQ5OTQwMjg2LCJleHAiOjE2NTAwMjY2ODYsInJvbGUiOlt7ImF1dGhvcml0eSI6IlJPTEVfQ09NUEFOWU9XTkVSIn1dfQ.wIU7ib-BRctd4X30X3u_h1TfmAf5aDNAYOQ5vqCDgw6FM1kFYhMm_NPq_aQoOo61w00O49BgCcIqKG7gQ37fqg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/valuation_by_category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"valuation_by_category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Count per category(for Business Intelligence Page)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW5naHN1bmlsIiwiaWF0IjoxNjQ5OTQwMjg2LCJleHAiOjE2NTAwMjY2ODYsInJvbGUiOlt7ImF1dGhvcml0eSI6IlJPTEVfQ09NUEFOWU9XTkVSIn1dfQ.wIU7ib-BRctd4X30X3u_h1TfmAf5aDNAYOQ5vqCDgw6FM1kFYhMm_NPq_aQoOo61w00O49BgCcIqKG7gQ37fqg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/countPerCat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"countPerCat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3)Add Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW5naHN1bmlsIiwiaWF0IjoxNjQ5OTQwMDM3LCJleHAiOjE2NTAwMjY0MzcsInJvbGUiOlt7ImF1dGhvcml0eSI6IlJPTEVfQ09NUEFOWU9XTkVSIn1dfQ.dwjOsww8H3W_JQPT8m9IYGjXkU3dQ9RzVZmc6WlhlqZZa9B6KQtQbIhj4L27ZVvqyFJ1UeBY7soVB8-c_vaCqQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Colgate\",\r\n    \"stocks\": \"10\",\r\n    \"unit\": \"NUMBER\",\r\n    \"price\": \"100\",\r\n    \"minStock\": \"5\",\r\n    \"maxStock\": \"20\",\r\n    \"categoryName\":\"Personal Care\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "valuation_by_category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJOYXR0dUtha2EiLCJpYXQiOjE2NDkwNjk4MDQsImV4cCI6MTY0OTE1NjIwNH0.ZY-oEzuyfP0t8AljRUxIBeruMpsoTxHMnnFF3lvNxJ6t5uqhCfVVF1Pz4BNGAZFDIvwQnI1H9yiQpFWYY2j7xg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/valuation_by_category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"valuation_by_category"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SignUp/SignIn",
+			"item": [
+				{
+					"name": "OwnerSignup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t\t{\r\n\t\t    \"userName\": \"singhsunil\",\r\n\t\t    \"name\": \"Sunil Singh\",\r\n\t\t    \"email\" : \"sunil_singh@gmail.com\",\r\n\t\t    \"password\": \"Sunil123!\",\r\n\t\t    \"roles\": [\r\n\t\t        \"ROLE_COMPANYOWNER\"\r\n\t\t    ],\r\n\t\t    \"dob\" : \"1992-01-12\",\r\n\t\t    \"company\": {\"companyName\":\"Bajaj Hindusthan Sugar Ltd\", \"gstin\": \"29GGGGG1314R9Z6\", \"address\":\"Lucknow / Uttar Pradesh - 226010\", \"contactOf\":\"-1\"}\r\n\t\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OwnerSignin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"singhsunil\",\r\n    \"password\": \"Sunil123!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InviteEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"karankumar\",\r\n    \"email\" : \"karankumar@gmail.com\",\r\n    \"password\": \"Abcdef123@\",\r\n    \"roles\": [\r\n        \"ROLE_EMPLOYEE\"\r\n    ],\r\n    \"dob\" : \"1996-01-10\",\r\n    \"ownerId\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/invite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"invite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Employee LogIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"karankumar\",\r\n    \"password\": \"Abcdef123@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "usernameCheck",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/usernameCheck/singhsunil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usernameCheck",
+								"singhsunil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "emailCheck",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/emailCheck/sunil_singh@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"emailCheck",
+								"sunil_singh@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction Controller",
+			"item": [
+				{
+					"name": "getTransactionById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJOYXR0dUtha2EiLCJpYXQiOjE2NDkyMjY2MTMsImV4cCI6MTY0OTMxMzAxM30.e-6B1hSF2zsRgJFsPeE0yK8M7bgnkHuQF1G2eKPLQxMAb8UZ0Lrszy0pvzLq5Yv2amRQC3Zwv0vgRlYFWkShUg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/transactions/id/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transactions",
+								"id",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transactio per month amt(for Business Intelligence Page)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJOYXR0dUtha2EiLCJpYXQiOjE2NDk0MDgwMTQsImV4cCI6MTY0OTQ5NDQxNH0.PVlcXpVewAZT75sZb8UFM__9NGE_hPEEzRXI1Sldcs5V4zSL92kZmk1yrLa6_Wp5--AG354yQZC91yGAvaPG4w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/transactions/type/sales",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transactions",
+								"type",
+								"sales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transaction page filters",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW5naHN1bmlsIiwiaWF0IjoxNjQ5OTQwMjg2LCJleHAiOjE2NTAwMjY2ODYsInJvbGUiOlt7ImF1dGhvcml0eSI6IlJPTEVfQ09NUEFOWU9XTkVSIn1dfQ.wIU7ib-BRctd4X30X3u_h1TfmAf5aDNAYOQ5vqCDgw6FM1kFYhMm_NPq_aQoOo61w00O49BgCcIqKG7gQ37fqg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"start\":null,\r\n    \"end\":null,\r\n    \"status\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transactions/page/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transactions",
+								"page",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CompanyController",
+			"item": [
+				{
+					"name": "List of Contacts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW5naHN1bmlsIiwiaWF0IjoxNjQ5OTQwMjg2LCJleHAiOjE2NTAwMjY2ODYsInJvbGUiOlt7ImF1dGhvcml0eSI6IlJPTEVfQ09NUEFOWU9XTkVSIn1dfQ.wIU7ib-BRctd4X30X3u_h1TfmAf5aDNAYOQ5vqCDgw6FM1kFYhMm_NPq_aQoOo61w00O49BgCcIqKG7gQ37fqg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies/page/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"page",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "count of contacts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW5naHN1bmlsIiwiaWF0IjoxNjQ5OTQwMjg2LCJleHAiOjE2NTAwMjY2ODYsInJvbGUiOlt7ImF1dGhvcml0eSI6IlJPTEVfQ09NUEFOWU9XTkVSIn1dfQ.wIU7ib-BRctd4X30X3u_h1TfmAf5aDNAYOQ5vqCDgw6FM1kFYhMm_NPq_aQoOo61w00O49BgCcIqKG7gQ37fqg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies/count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit Owner Company Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW5naHN1bmlsIiwiaWF0IjoxNjQ5OTQwMjg2LCJleHAiOjE2NTAwMjY2ODYsInJvbGUiOlt7ImF1dGhvcml0eSI6IlJPTEVfQ09NUEFOWU9XTkVSIn1dfQ.wIU7ib-BRctd4X30X3u_h1TfmAf5aDNAYOQ5vqCDgw6FM1kFYhMm_NPq_aQoOo61w00O49BgCcIqKG7gQ37fqg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"changed name\",\r\n    \"gstin\": \"changedGSTIN123\",\r\n    \"address\" : \"changed Address\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/companies/editUserCompany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"editUserCompany"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UserController",
+			"item": [
+				{
+					"name": "Get list of Employees in Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaW5naHN1bmlsIiwiaWF0IjoxNjQ5OTQwMjg2LCJleHAiOjE2NTAwMjY2ODYsInJvbGUiOlt7ImF1dGhvcml0eSI6IlJPTEVfQ09NUEFOWU9XTkVSIn1dfQ.wIU7ib-BRctd4X30X3u_h1TfmAf5aDNAYOQ5vqCDgw6FM1kFYhMm_NPq_aQoOo61w00O49BgCcIqKG7gQ37fqg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/getAllUsers/page/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"getAllUsers",
+								"page",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEmployeeByName",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/delete/karankumar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"delete",
+								"karankumar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
