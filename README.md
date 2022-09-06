@@ -6,7 +6,6 @@
   </a>
 </p>
 
-### This Project was submitted in partial fulfillment for the award of Diploma in Advanced Computing (PG-DAC) from CDAC, ACTS Pune
 
 ------------
 >“NattuKaka"Web Application which is an online inventory management system enabling customers to keep track of all the products that your business has in stock. Company can update, insert , delete as well as view & track their Inventory. The admin has full access to the resources available, and he can also add role based members with limited access to the resources.
